@@ -40,7 +40,7 @@ namespace Lesson06_Types_of_variables
 
             Console.WriteLine("The Phone 1 model is: {0}, and its cost: {1}", objP1.strModel, objP1.fltPrice);
             Console.WriteLine("The Phone 2 model is: {0}, and its cost: {1}", objP2.strModel, objP2.fltPrice);
-            Console.WriteLine("Total Count: {0}, Total Score: {1}", Phone.intCount, Phone.fltTotalPrice);
+            Console.WriteLine("Total Count: {0}\nTotal Score: {1}", Phone.intCount, Phone.fltTotalPrice);
             Console.ReadKey();
         
 
