@@ -27,3 +27,31 @@ public string Greating(string hi){
 }
 
 ```
+###  3-Static variables or Class variable
+We can only have 1 static variable per class.
+
+This variable create at the start of execution and destroyed after execution ends.
+
+We use `static` keyword to create static variable.
+
+```
+class Player{
+public static string strTotalName;        # static variable
+public static float fltTotalAge;          # static variable
+}
+
+```
+We call static variable by `class_name.variable name()`
+```
+Console.WriteLine("Total is: "+ Player.strTotalName);
+```
+### Private static variable
+We have to use static accessor
+```
+private static int intTotalPlayer;      # private static
+public static int TotalPlayer(){        # accessor
+    return Player.intTotalPlayer; 
+}
+Console.WriteLine("Total is: " + Player.TotalPlayer());  # we call accessor
+
+```
